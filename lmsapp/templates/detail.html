@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+	{% block content %}
+	
+ {% for blog in blogs %}
+  <ul><h2> {{blog.name}}</h2>
+    <h3>{{blog.book}}</h3>
+    <h5>{{blog.duedate}}</h5>
+    <h5>{{blog.returned}}</h5></ul>
+  {% endfor %}
+   {% endblock content %}
